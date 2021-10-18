@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-md-5">
               <label for="inputCard" class="form-label">Card #</label>
-              <input type="texto" class="form-control" id="inputCard" placeholder="XXXXXXXXXXXXXXXX">
+              <input type="text" class="form-control" id="inputCard" placeholder="XXXXXXXXXXXXXXXX">
             </div>
             <div class="col-md-3">
               <label for="inputCodigo" class="form-label">CVC #</label>
@@ -37,7 +37,7 @@
               <label for="basic-url" class="form-label">Amount</label>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon3">$</span>
-                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Amount">
+                <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Amount">
               </div>
             </div>
         <div class="row">
@@ -58,9 +58,10 @@
             </div>
         
             <div class="col-md-3">
-              <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
-                <option selected>Pick a state</option>
+              <label for="exampleDataList" class="form-label">State</label>
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                <datalist id="datalistOptions">
+                <option> Pick a state</option>
                 <option>Andalucía</option>
                 <option>Aragón</option>
                 <option>Principado de Asturias</option>
@@ -81,7 +82,7 @@
                 <option>Ciudad Autónoma de Ceuta</option>
                 <option>Ciudad Autónoma de Melilla</option>
              
-              </select>
+              </datalist>
             </div>
             <div class="col-md-3">
               <label for="inputZip" class="form-label">Zip</label>
